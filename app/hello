@@ -1,0 +1,68 @@
+// package main
+
+// import (
+// 	"errors"
+// 	"fmt"
+// )
+
+// type person struct {
+// 	name string
+// 	age  int
+// }
+
+// func main() {
+// 	m := make(map[string]int)
+// 	m["cat"] = 1
+// 	m["dog"] = 2
+// 	m["rat"] = 3
+
+// 	for animal, amount := range m {
+// 		//concatenated := fmt.Sprintf("%d %s", amount, animal)
+
+// 		display, errorMsg := countAndDiplay(amount, animal)
+
+// 		if errorMsg == nil {
+// 			fmt.Println(display)
+// 		}
+
+// 	}
+
+// 	i := 0
+
+// 	for i < 5 {
+// 		i++
+// 		fmt.Println(i)
+// 	}
+
+// 	// p := person{name: "dave", age: 13}
+// 	// fmt.Println(p)
+// 	// Creating an array
+// 	arr := [7]string{"This", "is", "the", "tutorial",
+// 		"of", "Go", "language"}
+
+// 	// Display array
+// 	fmt.Println("Array:", arr)
+
+// 	// Creating a slice
+// 	myslice := arr[6:7]
+
+// 	// Display slice
+// 	fmt.Println("Slice:", myslice)
+
+// 	// Display length of the slice
+// 	fmt.Printf("Length of the slice: %d", len(myslice))
+
+// 	// Display the capacity of the slice
+// 	fmt.Printf("\nCapacity of the slice: %d", cap(myslice))
+
+// }
+
+// func countAndDiplay(number int, display string) (string, error) {
+// 	if number < 1 {
+// 		return "No animal to display ", errors.New("Nothing to display")
+// 	}
+
+// 	concatenated := fmt.Sprintf("%d %s", number, display)
+
+// 	return concatenated, nil
+// }
